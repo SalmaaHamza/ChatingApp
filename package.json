@@ -1,18 +1,20 @@
 {
-  "name": "current-project",
-  "engines": {
-    "node": "14.15.4"
-  },
+  "name": "wassup",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "nodemon server",
+    "serve": "node server"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^2.2.0"
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
- 
 }

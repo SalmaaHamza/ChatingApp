@@ -2,56 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chat App</title>
-  <script defer src="socket.io/socket.io.js"></script>
-  <script defer src="script.js"></script>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    #message-container {
-      width: 80%;
-      max-width: 1200px;
-    }
-
-    #message-container div {
-      background-color: #CCC;
-      padding: 5px;
-    }
-
-    #message-container div:nth-child(2n) {
-      background-color: #FFF;
-    }
-
-    #send-container {
-      position: fixed;
-      padding-bottom: 30px;
-      bottom: 0;
-      background-color: white;
-      max-width: 1200px;
-      width: 80%;
-      display: flex;
-    }
-
-    #message-input {
-      flex-grow: 1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup chat app</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-  <div id="message-container"></div>
-  <form id="send-container">
-    <input type="text" id="message-input">
-    <button type="submit" id="send-button">Send</button>
-  </form>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt="">
+            <h1>Wassup</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
 </body>
 
 </html>
